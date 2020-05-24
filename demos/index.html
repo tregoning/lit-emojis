@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #console {
+            position: fixed;
+            top: 0;
+            left: 15px;
+            width: 400px;
+            border: 1px dotted #999;
+            line-height: 2em;
+            font-size: 1em;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            color: #333;
+            min-height: 2em;
+            white-space: pre;
+            max-height: 100vh;
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        #console h3 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+    </style>
+    <script type="module" src="../src/lit-emojis.js"></script>
+</head>
+<body>
+    <div id="console">
+        <h3>Output</h3>
+    </div>
+    <lit-emojis value="3"></lit-emojis>
+
+<script>
+    const litEmojis = document.querySelector('lit-emojis');
+
+    const output = document.querySelector('#console');
+
+    litEmojis.addEventListener('change', (e) => {
+        const line = document.createTextNode(`${e.detail.value}\n`);
+        output.appendChild(line);
+    }, false);
+</script>
+</body>
+</html>

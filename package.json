@@ -1,0 +1,43 @@
+{
+  "name": "lit-emojis",
+  "version": "0.0.0",
+  "description": "Web Component for animated emojis",
+  "main": "lit-emojis.js",
+  "scripts": {
+    "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
+    "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
+    "start": "es-dev-server --app-index demos/index.html --node-resolve --watch --open",
+    "release": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tregoning/lit-emojis.git"
+  },
+  "keywords": [
+    "SVG",
+    "emoji",
+    "animated",
+    "webcomponent",
+    "web-component",
+    "component",
+    "lit-element",
+    "lit-component",
+    "Feedback"
+  ],
+  "author": "John Tregoning",
+  "license": "SEE LICENSE IN 'LICENSE' File ",
+  "bugs": {
+    "url": "https://github.com/tregoning/lit-emojis/issues"
+  },
+  "homepage": "https://github.com/tregoning/lit-emojis#readme",
+  "devDependencies": {
+    "@open-wc/eslint-config": "^2.0.6",
+    "es-dev-server": "^1.51.0",
+    "eslint": "^7.1.0",
+    "np": "*"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1",
+    "lit-html": "^1.2.1"
+  }
+}
