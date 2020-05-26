@@ -1,6 +1,6 @@
 {
   "name": "lit-emojis",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Web Component for animated emojis",
   "main": "lit-emojis.js",
   "scripts": {
